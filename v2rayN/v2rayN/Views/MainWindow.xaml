@@ -35,10 +35,10 @@
         Style="{StaticResource MaterialDesignEmbeddedDialogHost}">
         <Grid>
             <DockPanel>
-                <ToolBarTray DockPanel.Dock="Top">
+                <ToolBarTray DockPanel.Dock="Bottom">
                     <ToolBar
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
                         ClipToBounds="True"
                         Style="{StaticResource MaterialDesignToolBar}">
                         <Menu Margin="0,1" Style="{StaticResource ToolbarMenu}">
@@ -286,7 +286,7 @@
                     </ToolBar>
                 </ToolBarTray>
 
-                <view:StatusBarView DockPanel.Dock="Bottom" />
+                <view:StatusBarView DockPanel.Dock="Top" />
 
                 <Grid>
                     <Grid x:Name="gridMain" Visibility="Collapsed">
